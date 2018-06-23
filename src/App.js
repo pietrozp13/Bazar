@@ -34,7 +34,6 @@ class App extends Component {
         // firebase.database().ref().child('bazarapi').set({
           // testee: this.state.usernameViaFire
       // });
-
     }
 
     handleChange(e) {
@@ -94,6 +93,7 @@ class App extends Component {
             <input type="text" value={this.state.usernameViaFire} onChange={this.handleChange}/>
             <button onClick={this.handerDelete}>deletee</button>
           <div>{this.state.usernameViaFire}</div>
+          <div>aqui</div>
         </div>
         )}/>
         <Route exact path="/registro" render={()=> (

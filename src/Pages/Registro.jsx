@@ -136,13 +136,17 @@ handerDelete = () => {
     console.log("aquele")
   }
     return (      
-      <div style={{ margin: 'auto', width: '80%'}}>
+      <div style={{ margin: 'auto', width: '80%', "text-align":"center"}}>
       <h1>Nome Pessoa: Pietro</h1>
-        <TextField hintText="Nome Pessoa" value={this.state.userName} onChange={this.handleChangeUserName}/>
-        <TextField hintText="Nome produto" value={this.state.nomeProduto} onChange={this.handleChangeNomeProduto}/>
-        <TextField hintText="Marca produto" value={this.state.marcaProduto} onChange={this.handleChangeMarcaProduto}/>
-        <TextField hintText="Cor produto" value={this.state.corProduto} onChange={this.handleChangeCorProduto}/>
-        <TextField hintText="Valor procuto" value={this.state.valorProduto} onChange={this.handleChangeValorProduto}/>
+      <TextField hintText="Nome Pessoa" value={this.state.userName} onChange={this.handleChangeUserName}/>
+      <br/>
+      <TextField hintText="Nome produto" value={this.state.nomeProduto} onChange={this.handleChangeNomeProduto}/>
+      <br/>
+      <TextField hintText="Marca produto" value={this.state.marcaProduto} onChange={this.handleChangeMarcaProduto}/>
+      <br/>
+      <TextField hintText="Cor produto" value={this.state.corProduto} onChange={this.handleChangeCorProduto}/>
+      <br/>
+      <TextField hintText="Valor procuto" value={this.state.valorProduto} onChange={this.handleChangeValorProduto}/>
         <div style={{ textAlign: 'center', margin: '10px' }}>
           <RaisedButton label="Add" primary={true} onClick={this.handerUpdata}/>
           <RaisedButton label="Delete" primary={true} onClick={this.handerDelete}/>
